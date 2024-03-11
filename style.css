@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Space+Mono&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;600&display=swap');
+:root{
+    --space-mono-font: 'Space Mono', monospace;
+    --border-dark-subtle: #373838; 
+    --font-tillana:'Tillana', cursive;
+}
+*{
+    box-sizing: border-box;
+}
+body *{
+    font-family: var(--space-mono-font);
+}
+.font-tillana{
+    font-family: var(--font-tillana);
+}
+/**
+Page Design
+*/
+body,
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F9F9F9;
+}
+
+#content-wrapper>section:not(:nth-child(1)){
+padding-top: 2em;
+padding-bottom: 2em;
+}
+#content-wrapper>section:nth-child(odd){
+    background-color: #67778b;
+}
+#content-wrapper>section:nth-child(odd) *{
+    color: #fff;
+}
+
+/* Top Navigation Custom Design */
+#topNavigation{
+    background-color: #67778b;
+    z-index: 1023;
+}
+#topNavigation *{
+    color:#fff;
+    font-family: var(--font-tillana);
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+/* Slider Section */
+#carouselExample {
+    position: relative;
+    height: 80vh;
+}
+#carouselExample>.carousel-inner,
+#carouselExample>.carousel-inner>.carousel-item{
+    height: 100%;
+}
+
+#carouselExample>.carousel-inner>.carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    filter: brightness(0.7);
+}
+#carouselExample>.carousel-inner>.carousel-item .carousel-caption{
+    bottom: unset;
+    top: 0;
+    height: calc(100%);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#carouselExample>.carousel-inner>.carousel-item .carousel-caption *{
+    text-shadow: 0px 0px 3px #373838;
+}
+
+#goat {
+text-align:center;
+padding-top: 20px;
+}
+
